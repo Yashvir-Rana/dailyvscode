@@ -1,0 +1,1 @@
+print("toyo yoto pomo kolo")
