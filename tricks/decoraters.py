@@ -3,8 +3,9 @@
 # without permanently modifying the callable itself.
 
 
-def deco(func):
-    def inner(a, b):
+def deco(func): # decorator
+    """this is a decorator"""
+    def inner(a, b): # closure
         if a < b :
             a, b = b, a
         return func(a, b)
@@ -20,3 +21,4 @@ def div(a, b):
     print(a/b)
 
 div(1, 2)
+print(deco.__doc__) # docstring 
