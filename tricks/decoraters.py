@@ -9,9 +9,14 @@ def deco(func):
             a, b = b, a
         return func(a, b)
     return inner
-
+"""
+def div(a, b):
+    print(a/b)
+div1 = deco(div)
+div1(1, 2)
+"""
 @deco
 def div(a, b):
     print(a/b)
-    
+
 div(1, 2)
