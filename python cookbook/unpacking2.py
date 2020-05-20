@@ -9,7 +9,7 @@ def drop_first_last(grades):
 
 grades = (40, 55, 55, 55, 42)
 print(drop_first_last(grades))
-
+# demo
 record = ('dave', 'davdbh@gmail.co', '555562496', '5641546123')
 name, email, *phone = record
 print(phone)
