@@ -28,11 +28,6 @@ class AlienInvesion:
             self._check_events()
             self._update_screen()
 
-            
-
-            # Redraw the screen during each pass through the loop
-            
-
     def _check_events(self):
         """respond to keypress and mouse events"""
         for event in pygame.event.get():
@@ -40,6 +35,8 @@ class AlienInvesion:
                     sys.exit()
     def _update_screen(self):
         """update images on the screen, and flip to the new screen"""
+
+        # Redraw the screen during each pass through the loop
         self.screen.fill(self.settings.bg_color)
         self.ship.blitme()
 
