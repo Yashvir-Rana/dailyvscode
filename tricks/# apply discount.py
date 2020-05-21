@@ -6,7 +6,7 @@ def apply_discount(product, discount):
     return price
 
 shoes = {'name': 'fancy', 'price':14900}
-print(apply_discount(shoes, 2))
+print(apply_discount(shoes, 0.5))
 
 # assert syntax
 #""" assert exp1, [exp2]
